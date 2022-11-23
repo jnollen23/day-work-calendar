@@ -23,11 +23,13 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  padding:5px 0 0 0;
 }
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 15px 0 15px 0;
+  padding:5px 0 0 0;
 }
 
 .row {
@@ -63,9 +65,17 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  cursor:pointer;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.save-icon{
+  max-width: 25px;
+  max-height: 25px;
+  filter:brightness(1);
+  pointer-events: none;
 }
