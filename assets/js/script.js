@@ -73,7 +73,7 @@ function CreateUI(){
 function CreateBlock(time, text){
     var item = $('<section>');
     var timeClass = '';
-    var timeNow = moment();
+    var timeNow = moment("11:00AM","h:mmA");
     
     if(timeNow.format('HH') == time) timeClass = 'present';
     else if(parseInt(timeNow.format('HH')) > parseInt(time)) timeClass = 'past';
